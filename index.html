@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta lekcji perkusji</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap">
+    <style>
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: navy;
+        }
+        body {
+            background-image: url('https://www.transparenttextures.com/patterns/checkered-pattern.png');
+            font-family: 'Arial', cursive;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: navy;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oferta lekcji perkusji</h1>
+    <p>Szanowni Państwo,</p>
+    <p>Jeśli ktoś z Państwa rozważa rozpoczęcie nauki gry na perkusji, mam przyjemność zaproponować lekcje prowadzone przeze mnie. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują moją szeroką wiedzę na temat tego instrumentu.</p>
+    <p>Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie.</p>
+    <p>Zachęcam do wysłania zgłoszenia poprzez formularz w celu uzyskania szczegółowych informacji. (W tytule należy wpisać "zgłoszenie") </p>
+    
+    <form action="send_email.php" method="get">
+        <label for="imie">Imię ucznia:</label>
+        <input type="text" id="imie" name="imie" required>
+
+        <label for="nazwisko">Nazwisko ucznia:</label>
+        <input type="text" id="nazwisko" name="nazwisko" required>
+
+        <label for="wiek">Wiek ucznia:</label>
+        <input type="text" id="wiek" name="wiek" required>
+
+        <label for="telefon">Numer telefonu:</label>
+        <input type="tel" id="telefon" name="telefon" required>
+
+        <label for="stopien">Stopień zaawansowania:</label>
+        <select id="stopien" name="stopien" required>
+            <option value="dopiero_zaczynam">Dopiero zaczynam</option>
+            <option value="male_doswiadczenie">Małe doświadczenie z zestawem perkusyjnym</option>
+            <option value="duzo_ale_chce_podszlifowac">Potrafię dużo ale chcę podszlifować swoje umiejętności</option>
+        </select>
+
+        <input type="submit" value="Wyślij zgłoszenie">
+    </form>
+    
+    <p>Z poważaniem,</p>
+    <p>Emanuel Kecher</p>
+</body>
+</html>
