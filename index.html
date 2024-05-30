@@ -6,24 +6,38 @@
     <title>lekcje perkusji</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap">
     <style>
-        h1 {
-            font-family: 'Arial', sans-serif;
-            color: navy;
-            font-size: 36px;
-            display: flex;
-            align-items: center;
-        }
-        h1 img {
-            margin-right: 10px;
-            width: 100px; /* Increased size */
-            height: auto;
-        }
         body {
-            background-image: url('https://www.transparenttextures.com/patterns/checkered-pattern.png');
+            background-color: white; /* Changed to plain white background */
             font-family: 'Arial', cursive;
             margin: 0;
             padding: 0;
             font-size: 18px;
+            color: black; /* Changed text color to black */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .header-container img {
+            width: 150px; /* Increased size */
+            height: auto;
+        }
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: black; /* Changed text color to black */
+            font-size: 36px;
+            margin: 0;
+        }
+        .content {
+            max-width: 800px;
+            padding: 20px;
+            text-align: justify;
         }
         .translate-btn {
             position: fixed;
@@ -34,30 +48,48 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             font-family: 'Arial', sans-serif;
-            color: navy;
+            color: black; /* Changed text color to black */
             text-decoration: none;
             font-size: 16px;
         }
         .translate-btn:hover {
             background-color: #f0f0f0;
         }
+        @media (max-width: 600px) {
+            .header-container img {
+                width: 100px; /* Adjusted for mobile */
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .content {
+                padding: 10px;
+                font-size: 16px;
+            }
+            .translate-btn {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>
+    <div class="header-container">
         <img src="logo123.png" alt="Brand Logo">
-        BecomeRealDrummer
-    </h1>
-    <p>Szanowni Państwo,</p>
-    <p>Jeśli ktoś z Państwa rozważa rozpoczęcie nauki gry na perkusji, mam przyjemność zaproponować lekcje prowadzone przeze mnie. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują moją szeroką wiedzę na temat tego instrumentu.</p>
-    <p>Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.</p>
-    <p>Zachęcam do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.</p>
-    <ul>
-        <li>Adres e-mail: <a href="mailto:ekecher.lekcjeperkusji@gmail.com">ekecher.lekcjeperkusji@gmail.com</a></li>
-        <li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>
-    </ul>
-    <p>Z poważaniem,</p>
-    <p>Emanuel Kecher</p>
+        <h1>BecomeRealDrummer</h1>
+    </div>
+    <div class="content">
+        <p>Szanowni Państwo,</p>
+        <p>Jeśli ktoś z Państwa rozważa rozpoczęcie nauki gry na perkusji, mam przyjemność zaproponować lekcje prowadzone przeze mnie. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują moją szeroką wiedzę na temat tego instrumentu.</p>
+        <p>Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.</p>
+        <p>Zachęcam do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.</p>
+        <ul>
+            <li>Adres e-mail: <a href="mailto:ekecher.lekcjeperkusji@gmail.com">ekecher.lekcjeperkusji@gmail.com</a></li>
+            <li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>
+        </ul>
+        <p>Z poważaniem,</p>
+        <p>Emanuel Kecher</p>
+    </div>
 
     <a href="#" class="translate-btn" id="translate-to-english">English</a>
     <a href="#" class="translate-btn" id="translate-to-polish" style="display: none;">Polish</a>
