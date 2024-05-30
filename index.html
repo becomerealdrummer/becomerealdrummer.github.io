@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BecomeRealDrummer</title>
+    <title>lekcje perkusji</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap">
     <style>
         h1 {
             font-family: 'Arial', sans-serif;
             color: navy;
             font-size: 36px;
+            display: flex;
+            align-items: center;
+        }
+        h1 img {
+            margin-right: 10px;
+            width: 100px; /* Increased size */
+            height: auto;
         }
         body {
             background-image: url('https://www.transparenttextures.com/patterns/checkered-pattern.png');
@@ -37,7 +44,10 @@
     </style>
 </head>
 <body>
-    <h1>BecomeRealDrummer</h1>
+    <h1>
+        <img src="logo123.png" alt="Brand Logo">
+        BecomeRealDrummer
+    </h1>
     <p>Szanowni Państwo,</p>
     <p>Jeśli ktoś z Państwa rozważa rozpoczęcie nauki gry na perkusji, mam przyjemność zaproponować lekcje prowadzone przeze mnie. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują moją szeroką wiedzę na temat tego instrumentu.</p>
     <p>Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.</p>
@@ -71,7 +81,7 @@
             translateToPolishBtn.style.display = 'inline-block';
 
             document.documentElement.lang = 'en';
-            document.querySelector('h1').innerText = 'Drum Lessons';
+            document.querySelector('h1').innerHTML = '<img src="logo123.png" alt="Brand Logo"> BecomeRealDrummer';
             document.querySelectorAll('p')[0].innerText = 'Dear Sir or Madam,';
             document.querySelectorAll('p')[1].innerText = 'If any of you are considering starting drum lessons, I am pleased to offer lessons conducted by myself. The classes will follow the curriculum of the Leicester drum school and will utilize my extensive knowledge of this instrument.';
             document.querySelectorAll('p')[2].innerText = 'The cost of one hour of lessons is only 40 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
@@ -86,7 +96,7 @@
             translateToPolishBtn.style.display = 'none';
 
             document.documentElement.lang = 'pl';
-            document.querySelector('h1').innerText = 'Lekcje perkusji';
+            document.querySelector('h1').innerHTML = '<img src="logo123.png" alt="Brand Logo"> BecomeRealDrummer';
             document.querySelectorAll('p')[0].innerText = 'Szanowni Państwo,';
             document.querySelectorAll('p')[1].innerText = 'Jeśli ktoś z Państwa rozważa rozpoczęcie nauki gry na perkusji, mam przyjemność zaproponować lekcje prowadzone przeze mnie. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują moją szeroką wiedzę na temat tego instrumentu.';
             document.querySelectorAll('p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
