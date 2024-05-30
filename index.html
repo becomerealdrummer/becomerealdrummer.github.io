@@ -88,55 +88,57 @@
             <li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>
         </ul>
         <p>Z poważaniem,</p>
-        <p>Emanuel Kecher</p>
+        <p><a href="https://www.facebook.com/emanuel.kecher.7">Emanuel Kecher</a></p>
     </div>
 
     <a href="#" class="translate-btn" id="translate-to-english">English</a>
     <a href="#" class="translate-btn" id="translate-to-polish" style="display: none;">Polish</a>
 
-    <script>
-        const translateToEnglishBtn = document.getElementById('translate-to-english');
-        const translateToPolishBtn = document.getElementById('translate-to-polish');
+   <script>
+    const translateToEnglishBtn = document.getElementById('translate-to-english');
+    const translateToPolishBtn = document.getElementById('translate-to-polish');
+    const authorName = document.getElementById('author-name');
+    const facebookLink = 'https://www.facebook.com/emanuel.kecher.7';
 
-        translateToEnglishBtn.addEventListener('click', function(event) {
-            event.preventDefault();
-            translateToEnglish();
-        });
+    translateToEnglishBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        translateToEnglish();
+    });
 
-        translateToPolishBtn.addEventListener('click', function(event) {
-            event.preventDefault();
-            translateToPolish();
-        });
+    translateToPolishBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        translateToPolish();
+    });
 
-        function translateToEnglish() {
-            translateToEnglishBtn.style.display = 'none';
-            translateToPolishBtn.style.display = 'inline-block';
+    function translateToEnglish() {
+        translateToEnglishBtn.style.display = 'none';
+        translateToPolishBtn.style.display = 'inline-block';
 
-            document.documentElement.lang = 'en';
-            document.querySelector('h1').innerHTML = '<img src="logo123.png" alt="Brand Logo"> BecomeRealDrummer';
-            document.querySelectorAll('p')[0].innerText = 'Dear Sir or Madam,';
-            document.querySelectorAll('p')[1].innerText = 'If any of you are considering starting drum lessons, I am pleased to offer lessons conducted by myself. The classes will follow the curriculum of the Leicester drum school and will utilize my extensive knowledge of this instrument.';
-            document.querySelectorAll('p')[2].innerText = 'The cost of one hour of lessons is only 40 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
-            document.querySelectorAll('p')[3].innerText = 'I encourage you to contact me via email or phone number for detailed information.';
-            document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:ekecher.lekcjeperkusji@gmail.com">ekecher.lekcjeperkusji@gmail.com</a></li><li>Phone: <a href="tel:+48511531874">+48 511 531 874</a></li>';
-            document.querySelectorAll('p')[4].innerText = 'Yours sincerely,';
-            document.querySelectorAll('p')[5].innerText = 'Emanuel Kecher';
-        }
+        document.documentElement.lang = 'en';
+        document.querySelector('h1').innerText = 'BecomeRealDrummer';
+        document.querySelectorAll('p')[0].innerText = 'Dear Sir or Madam,';
+        document.querySelectorAll('p')[1].innerText = 'If any of you are considering starting drum lessons, I am pleased to offer lessons conducted by myself. The classes will follow the curriculum of the Leicester drum school and will utilize my extensive knowledge of this instrument.';
+        document.querySelectorAll('p')[2].innerText = 'The cost of one hour of lessons is only 40 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
+        document.querySelectorAll('p')[3].innerText = 'I encourage you to contact me via email or phone number for detailed information.';
+        document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:ekecher.lekcjeperkusji@gmail.com">ekecher.lekcjeperkusji@gmail.com</a></li><li>Phone: <a href="tel:+48511531874">+48 511 531 874</a></li>';
+        document.querySelectorAll('p')[4].innerText = 'Yours sincerely,';
+        authorName.innerHTML = '<a href="' + facebookLink + '">Emanuel Kecher</a>';
+    }
 
-        function translateToPolish() {
-            translateToEnglishBtn.style.display = 'inline-block';
-            translateToPolishBtn.style.display = 'none';
+    function translateToPolish() {
+        translateToEnglishBtn.style.display = 'inline-block';
+        translateToPolishBtn.style.display = 'none';
 
-            document.documentElement.lang = 'pl';
-            document.querySelector('h1').innerHTML = '<img src="logo123.png" alt="Brand Logo"> BecomeRealDrummer';
-            document.querySelectorAll('p')[0].innerText = 'Szanowni Państwo,';
-            document.querySelectorAll('p')[1].innerText = 'Jeśli ktoś z Państwa rozważa rozpoczęcie nauki gry na perkusji, mam przyjemność zaproponować lekcje prowadzone przeze mnie. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują moją szeroką wiedzę na temat tego instrumentu.';
-            document.querySelectorAll('p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
-            document.querySelectorAll('p')[3].innerText = 'Zachęcam do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.';
-            document.querySelector('ul').innerHTML = '<li>Adres e-mail: <a href="mailto:ekecher.lekcjeperkusji@gmail.com">ekecher.lekcjeperkusji@gmail.com</a></li><li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>';
-            document.querySelectorAll('p')[4].innerText = 'Z poważaniem,';
-            document.querySelectorAll('p')[5].innerText = 'Emanuel Kecher';
-        }
-    </script>
+        document.documentElement.lang = 'pl';
+        document.querySelector('h1').innerText = 'BecomeRealDrummer';
+        document.querySelectorAll('p')[0].innerText = 'Szanowni Państwo,';
+        document.querySelectorAll('p')[1].innerText = 'Jeśli ktoś z Państwa rozważa rozpoczęcie nauki gry na perkusji, mam przyjemność zaproponować lekcje prowadzone przeze mnie. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują moją szeroką wiedzę na temat tego instrumentu.';
+        document.querySelectorAll('p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
+        document.querySelectorAll('p')[3].innerText = 'Zachęcam do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.';
+        document.querySelector('ul').innerHTML = '<li>Adres e-mail: <a href="mailto:ekecher.lekcjeperkusji@gmail.com">ekecher.lekcjeperkusji@gmail.com</a></li><li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>';
+        document.querySelectorAll('p')[4].innerText = 'Z poważaniem,';
+        authorName.innerHTML = '<a href="' + facebookLink + '">Emanuel Kecher</a>';
+    }
+</script>
 </body>
 </html>
