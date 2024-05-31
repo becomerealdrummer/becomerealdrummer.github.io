@@ -166,7 +166,7 @@
     <div class="musician-info">
         <h2><a href="https://www.facebook.com/konrad.kraszewski.56" target="_blank">Konrad Kraszewski</a></h2>
         <p>Wiek: 17</p>
-        <p>Doświadczenie: 13 lata</p>
+        <p>Doświadczenie: 13 lat</p>
         <p>Gatunek: </p>
         <p>Instrument: Gitara Basowa, Wiolonczela, Pianino</p>
     </div>
@@ -174,71 +174,87 @@
 
     </div>
 
-    <script>
-        const translateToEnglishBtn = document.getElementById('translate-to-english');
-        const translateToPolishBtn = document.getElementById('translate-to-polish');
-        const authorName = document.getElementById('author-name');
-        const facebookLink = 'https://www.facebook.com/profile.php?id=61560034090351';
+   <script>
+    const translateToEnglishBtn = document.getElementById('translate-to-english');
+    const translateToPolishBtn = document.getElementById('translate-to-polish');
+    const authorName = document.getElementById('author-name');
+    const facebookLink = 'https://www.facebook.com/profile.php?id=61560034090351';
 
-        translateToEnglishBtn.addEventListener('click', function(event) {
-            event.preventDefault();
-            translateToEnglish();
-        });
+    translateToEnglishBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        translateToEnglish();
+    });
 
-        translateToPolishBtn.addEventListener('click', function(event) {
-            event.preventDefault();
-            translateToPolish();
-        });
+    translateToPolishBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        translateToPolish();
+    });
 
-        function translateToEnglish() {
-            translateToEnglishBtn.style.display = 'none';
-            translateToPolishBtn.style.display = 'inline-block';
-            document.documentElement.lang = 'en';
-            document.querySelector('h1').innerText = 'BecomeRealMusician';
-            document.querySelectorAll('p')[0].innerText = 'Dear Sir or Madam,';
-            document.querySelectorAll('p')[1].innerText = 'If you are considering starting lessons on electric guitar, drums, bass guitar, cello, or piano, we are pleased to offer lessons conducted by us. The material covered in the classes will be individually tailored by the teacher.';
-            document.querySelectorAll('p')[2].innerText = 'The cost of one hour of lessons is only 50 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
-            document.querySelectorAll('p')[3].innerText = 'We encourage you to contact us via email or phone number for detailed information.';
-            document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealdrummer@gmail.com">becomerealdrummer@gmail.com</a></li><li>Phone: <a href="tel:+48511531874">+48 511 531 874</a></li>';
-            document.querySelectorAll('p')[4].innerText = 'Yours sincerely,';
-            authorName.innerHTML = '<a href="' + facebookLink + '" target="_blank">BecomeRealMusician</a>';
-            
-            // Translate drummers section
-            translateDrummersToEnglish();
-        }
+    function translateToEnglish() {
+        translateToEnglishBtn.style.display = 'none';
+        translateToPolishBtn.style.display = 'inline-block';
+        document.documentElement.lang = 'en';
+        document.querySelectorAll('p')[0].innerText = 'Dear Sir or Madam,';
+        document.querySelectorAll('p')[1].innerText = 'If you are considering starting lessons on electric guitar, drums, bass guitar, cello, or piano, we are pleased to offer lessons conducted by us. The material covered in the classes will be individually tailored by the teacher.';
+        document.querySelectorAll('p')[2].innerText = 'The cost of one hour of lessons is only 50 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
+        document.querySelectorAll('p')[3].innerText = 'We encourage you to contact us via email or phone number for detailed information.';
+        document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealmusician.com">becomerealmusician@gmail.com</a></li><li>Phone: <a href="tel:+48511531874">+48 511 531 874</a></li>';
+        document.querySelectorAll('p')[4].innerText = 'Yours sincerely,';
+        
+        // Translate musicians section
+        translateMusiciansToEnglish();
+    }
 
-        function translateToPolish() {
-            translateToEnglishBtn.style.display = 'inline-block';
-            translateToPolishBtn.style.display = 'none';
-            document.documentElement.lang = 'pl';
-            document.querySelector('h1').innerText = 'BecomeRealMuzyk';
-            document.querySelectorAll('p')[0].innerText = 'Szanowni Państwo,';
-            document.querySelectorAll('p')[1].innerText = 'Jeśli rozważacie rozpoczęcie nauki gry na gitarze elektrycznej, perkusji, gitarze basowej, wiolonczeli oraz pianinie, mamy przyjemność zaproponować lekcje prowadzone przez nas. Materiał przerabiany na zajęciach będzie dobierany indywidualnie przez nauczyciela.';
-            document.querySelectorAll('p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 50 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
-            document.querySelectorAll('p')[3].innerText = 'Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.';
-            document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealdrummer@gmail.com">becomerealdrummer@gmail.com</a></li><li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>';
-            document.querySelectorAll('p')[4].innerText = 'Z poważaniem,';
-            authorName.innerHTML = '<a href="' + facebookLink + '" target="_blank">BecomeRealMuzyk</a>';
-            
-            // Translate drummers section
-            translateDrummersToPolish();
-        }
+    function translateToPolish() {
+        translateToEnglishBtn.style.display = 'inline-block';
+        translateToPolishBtn.style.display = 'none';
+        document.documentElement.lang = 'pl';
+        document.querySelectorAll('p')[0].innerText = 'Szanowni Państwo,';
+        document.querySelectorAll('p')[1].innerText = 'Jeśli rozważacie rozpoczęcie nauki gry na gitarze elektrycznej, perkusji, gitarze basowej, wiolonczeli oraz pianinie, mamy przyjemność zaproponować lekcje prowadzone przez nas. Materiał przerabiany na zajęciach będzie dobierany indywidualnie przez nauczyciela.';
+        document.querySelectorAll('p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 50 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
+        document.querySelectorAll('p')[3].innerText = 'Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.';
+        document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealmusician@gmail.com">becomerealmusician@gmail.com</a></li><li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>';
+        document.querySelectorAll('p')[4].innerText = 'Z poważaniem,';
+        
+        // Translate musicians section
+        translateMusiciansToPolish();
+    }
 
-        function translateDrummersToEnglish() {
-            document.querySelector('.drummers-section h2').innerText = 'Our Musicians';
-            document.querySelectorAll('.drummer-card p')[0].innerText = 'Age: 17';
-            document.querySelectorAll('.drummer-card p')[1].innerText = 'Experience: 3.5 years';
-            document.querySelectorAll('.drummer-card p')[2].innerText = 'Genre: Pop/Rock';
-            document.querySelectorAll('.drummer-card p')[3].innerText = 'Instrument: Drums';
-        }
+    function translateMusiciansToEnglish() {
+        document.querySelector('.musicians-section h2').innerText = 'Our Musicians';
+        document.querySelectorAll('.musician-card p')[0].innerText = 'Age: 17';
+        document.querySelectorAll('.musician-card p')[1].innerText = 'Experience: 3.5 years';
+        document.querySelectorAll('.musician-card p')[2].innerText = 'Genre: Pop/Rock';
+        document.querySelectorAll('.musician-card p')[3].innerText = 'Instrument: Drums';
 
-        function translateDrummersToPolish() {
-            document.querySelector('.drummers-section h2').innerText = 'Nasi Muzycy';
-            document.querySelectorAll('.drummer-card p')[0].innerText = 'Wiek: 17';
-            document.querySelectorAll('.drummer-card p')[1].innerText = 'Doświadczenie: 3,5 roku';
-            document.querySelectorAll('.drummer-card p')[2].innerText = 'Gatunek: Pop/Rock';
-            document.querySelectorAll('.drummer-card p')[3].innerText = 'Instrument: Perkusja';
-        }
-    </script>
+        document.querySelectorAll('.musician-card')[1].querySelectorAll('p')[0].innerText = 'Age: 18';
+        document.querySelectorAll('.musician-card')[1].querySelectorAll('p')[1].innerText = 'Experience: 4 years';
+        document.querySelectorAll('.musician-card')[1].querySelectorAll('p')[2].innerText = 'Genre:';
+        document.querySelectorAll('.musician-card')[1].querySelectorAll('p')[3].innerText = 'Instrument: Electric Guitar';
+
+        document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[0].innerText = 'Age: 17';
+        document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[1].innerText = 'Experience: 13 years';
+        document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[2].innerText = 'Genre:';
+        document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[3].innerText = 'Instrument: Bass Guitar, Cello, Piano';
+    }
+
+    function translateMusiciansToPolish() {
+        document.querySelector('.musicians-section h2').innerText = 'Nasi Muzycy';
+        document.querySelectorAll('.musician-card p')[0].innerText = 'Wiek: 17';
+        document.querySelectorAll('.musician-card p')[1].innerText = 'Doświadczenie: 3,5 roku';
+        document.querySelectorAll('.musician-card p')[2].innerText = 'Gatunek: Pop/Rock';
+        document.querySelectorAll('.musician-card p')[3].innerText = 'Instrument: Perkusja';
+
+        document.querySelectorAll('.musician-card')[1].querySelectorAll('p')[0].innerText = 'Wiek: 18';
+        document.querySelectorAll('.musician-card')[1].querySelectorAll('p')[1].innerText = 'Doświadczenie: 4 lata';
+        document.querySelectorAll('.musician-card')[1].querySelectorAll('p')[2].innerText = 'Gatunek:';
+        document.querySelectorAll('.musician-card')[1].querySelectorAll('p')[3].innerText = 'Instrument: Gitara elektryczna';
+
+        document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[0].innerText = 'Wiek: 17';
+        document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[1].innerText = 'Doświadczenie: 13 lat';
+        document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[2].innerText = 'Gatunek:';
+        document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[3].innerText = 'Instrument: Gitara Basowa, Wiolonczela, Pianino';
+    }
+</script>
 </body>
 </html>
