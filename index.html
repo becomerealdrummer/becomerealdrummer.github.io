@@ -117,6 +117,10 @@
             padding-left: 0;
         }
     }
+    .warning {
+        color: red;
+        margin-top: 10px;
+    }
 </style>
 </head>
 <body>
@@ -125,17 +129,18 @@
         <h1>BecomeRealMusician</h1>
     </div>
     <div class="content">
-        <p>Szanowni Państwo,</p>
-        <p>Jeśli rozważacie rozpoczęcie nauki gry na gitarze elektrycznej, perkusji, gitarze basowej, wiolonczeli oraz pianinie, mamy przyjemność zaproponować lekcje prowadzone przez nas. Materiał przerabiany na zajęciach będzie dobierany indywidualnie przez nauczyciela.</p>
-        <p>Koszt jednej godziny lekcji wynosi jedynie 50 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.</p>
-        <p>Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.</p>
-        <ul>
-            <li>Email: <a href="mailto:becomerealmusician@gmail.com">becomerealmusician@gmail.com</a></li>
-            <li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>
-        </ul>
-        <p>Z poważaniem,</p>
-        <p id="author-name"><a href="https://www.facebook.com/profile.php?id=61560034090351" target="_blank">BecomeRealMusician</a></p>
-    </div>
+    <p>Szanowni Państwo,</p>
+    <p>Projekt BecomeRealMusician, to grupa utalentowanych muzycznie osób, mająca na celu dzielenie się zainteresowaniem oraz nabytą przez nich wiedzą muzyczną poprzez udzielanie prywatnych lekcji gry na instrumentach.</p>
+    <p>Koszt jednej godziny lekcji wynosi jedynie 50 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.</p>
+    <p>Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.</p>
+    <ul>
+        <li>Email: <a href="mailto:becomerealmusician@gmail.com">becomerealmusician@gmail.com</a></li>
+        <li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>
+    </ul>
+    <p class="warning"><span style="color: red;">UWAGA:</span> Projekt nie jest szkołą muzyczną, lecz zespołem osób reprezentujących BecomeRealMusician, które ma za zadanie ułatwić odbiorcom kontakt z nimi.</p>
+    <p>Z poważaniem,</p>
+    <p id="author-name"><a href="https://www.facebook.com/profile.php?id=61560034090351" target="_blank">BecomeRealMusician</a></p>
+</div>
     <a href="#" class="translate-btn" id="translate-to-english">English</a>
     <a href="#" class="translate-btn" id="translate-to-polish" style="display: none;">Polish</a>
 
@@ -146,35 +151,34 @@
             <div class="musician-info">
                 <h2><a href="https://www.facebook.com/emanuel.kecher.7" target="_blank">Emanuel Kecher</a></h2>
                 <p>Wiek: 17</p>
-                <p>Doświadczenie: 3,5 roku</p>
+                <p>Doświadczenie: 3.5 roku</p>
                 <p>Gatunek: Pop/Rock</p>
                 <p>Instrument: Perkusja</p>
             </div>
         </div>
-		<div class="musician-card">
-    <img src="karol_kozyra.jpg" alt="Karol Kozyra" style="width: 250px; height: 250px;">
-    <div class="musician-info">
-        <h2><a href="https://www.facebook.com/karol.kozyra.12" target="_blank">Karol Kozyra</a></h2>
-        <p>Wiek: 18</p>
-        <p>Doświadczenie: 4 lata</p>
-        <p>Gatunek: </p>
-        <p>Instrument: Gitara elektryczna</p>
+        <div class="musician-card">
+            <img src="karol_kozyra.jpg" alt="Karol Kozyra" style="width: 250px; height: 250px;">
+            <div class="musician-info">
+                <h2><a href="https://www.facebook.com/karol.kozyra.12" target="_blank">Karol Kozyra</a></h2>
+                <p>Wiek: 18</p>
+                <p>Doświadczenie: 4 lata</p>
+                <p>Gatunek: </p>
+                <p>Instrument: Gitara elektryczna</p>
+            </div>
+        </div>
+        <div class="musician-card">
+            <img src="konrad_kraszewski.jpg" alt="Konrad Kraszewski" style="width: 250px; height: 250px;">
+            <div class="musician-info">
+                <h2><a href="https://www.facebook.com/konrad.kraszewski.56" target="_blank">Konrad Kraszewski</a></h2>
+                <p>Wiek: 17</p>
+                <p>Doświadczenie: 13 lat</p>
+                <p>Gatunek: </p>
+                <p>Instrument: Gitara Basowa, Wiolonczela, Pianino</p>
+            </div>
+        </div>
     </div>
-</div>
-<div class="musician-card">
-    <img src="konrad_kraszewski.jpg" alt="Konrad Kraszewski" style="width: 250px; height: 250px;">
-    <div class="musician-info">
-        <h2><a href="https://www.facebook.com/konrad.kraszewski.56" target="_blank">Konrad Kraszewski</a></h2>
-        <p>Wiek: 17</p>
-        <p>Doświadczenie: 13 lat</p>
-        <p>Gatunek: </p>
-        <p>Instrument: Gitara Basowa, Wiolonczela, Pianino</p>
-    </div>
-</div>
 
-    </div>
-
-   <script>
+    <script>
     const translateToEnglishBtn = document.getElementById('translate-to-english');
     const translateToPolishBtn = document.getElementById('translate-to-polish');
     const authorName = document.getElementById('author-name');
@@ -191,30 +195,33 @@
     });
 
     function translateToEnglish() {
-        translateToEnglishBtn.style.display = 'none';
-        translateToPolishBtn.style.display = 'inline-block';
-        document.documentElement.lang = 'en';
-        document.querySelectorAll('p')[0].innerText = 'Dear Sir or Madam,';
-        document.querySelectorAll('p')[1].innerText = 'If you are considering starting lessons on electric guitar, drums, bass guitar, cello, or piano, we are pleased to offer lessons conducted by us. The material covered in the classes will be individually tailored by the teacher.';
-        document.querySelectorAll('p')[2].innerText = 'The cost of one hour of lessons is only 50 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
-        document.querySelectorAll('p')[3].innerText = 'We encourage you to contact us via email or phone number for detailed information.';
-        document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealmusician.com">becomerealmusician@gmail.com</a></li><li>Phone: <a href="tel:+48511531874">+48 511 531 874</a></li>';
-        document.querySelectorAll('p')[4].innerText = 'Yours sincerely,';
+    translateToEnglishBtn.style.display = 'none';
+    translateToPolishBtn.style.display = 'inline-block';
+    document.documentElement.lang = 'en';
+    document.querySelectorAll('.content p')[0].innerText = 'Dear Sir or Madam,';
+    document.querySelectorAll('.content p')[1].innerText = 'The BecomeRealMusician project is a group of musically talented individuals aiming to share their interest and acquired musical knowledge by providing private music lessons.';
+    document.querySelectorAll('.content p')[2].innerText = 'The cost of one hour of lessons is only 50 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
+    document.querySelectorAll('.content p')[3].innerText = 'We encourage you to contact us via email or phone number for detailed information.';
+    document.querySelector('.content ul').innerHTML = '<li>Email: <a href="mailto:becomerealmusician@gmail.com">becomerealmusician@gmail.com</a></li><li>Phone: <a href="tel:+48511531874">+48 511 531 874</a></li>';
+    document.querySelector('.content .warning').innerHTML = '<span style="color: red;">NOTE:</span> This project is not a music school but a group of individuals representing BecomeRealMusician, whose task is to facilitate contact with them.';
+    document.querySelectorAll('.content p')[5].innerText = 'Yours sincerely,';
+
         
         // Translate musicians section
         translateMusiciansToEnglish();
     }
 
     function translateToPolish() {
-        translateToEnglishBtn.style.display = 'inline-block';
-        translateToPolishBtn.style.display = 'none';
-        document.documentElement.lang = 'pl';
-        document.querySelectorAll('p')[0].innerText = 'Szanowni Państwo,';
-        document.querySelectorAll('p')[1].innerText = 'Jeśli rozważacie rozpoczęcie nauki gry na gitarze elektrycznej, perkusji, gitarze basowej, wiolonczeli oraz pianinie, mamy przyjemność zaproponować lekcje prowadzone przez nas. Materiał przerabiany na zajęciach będzie dobierany indywidualnie przez nauczyciela.';
-        document.querySelectorAll('p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 50 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
-        document.querySelectorAll('p')[3].innerText = 'Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.';
-        document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealmusician@gmail.com">becomerealmusician@gmail.com</a></li><li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>';
-        document.querySelectorAll('p')[4].innerText = 'Z poważaniem,';
+    translateToEnglishBtn.style.display = 'inline-block';
+    translateToPolishBtn.style.display = 'none';
+    document.documentElement.lang = 'pl';
+    document.querySelectorAll('.content p')[0].innerText = 'Szanowni Państwo,';
+    document.querySelectorAll('.content p')[1].innerText = 'Projekt BecomeRealMusician, to grupa utalentowanych muzycznie osób, mająca na celu dzielenie się zainteresowaniem oraz nabytą przez nich wiedzą muzyczną poprzez udzielanie prywatnych lekcji gry na instrumentach.';
+    document.querySelectorAll('.content p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 50 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
+    document.querySelectorAll('.content p')[3].innerText = 'Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.';
+    document.querySelector('.content ul').innerHTML = '<li>Email: <a href="mailto:becomerealmusician@gmail.com">becomerealmusician@gmail.com</a></li><li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>';
+    document.querySelector('.content .warning').innerHTML = '<span style="color: red;">UWAGA:</span> Projekt nie jest szkołą muzyczną, lecz zespołem osób reprezentujących BecomeRealMusician, które ma za zadanie ułatwić odbiorcom kontakt z nimi.';
+    document.querySelectorAll('.content p')[5].innerText = 'Z poważaniem,';
         
         // Translate musicians section
         translateMusiciansToPolish();
@@ -241,7 +248,7 @@
     function translateMusiciansToPolish() {
         document.querySelector('.musicians-section h2').innerText = 'Nasi Muzycy';
         document.querySelectorAll('.musician-card p')[0].innerText = 'Wiek: 17';
-        document.querySelectorAll('.musician-card p')[1].innerText = 'Doświadczenie: 3,5 roku';
+        document.querySelectorAll('.musician-card p')[1].innerText =  'Doświadczenie: 3,5 roku';
         document.querySelectorAll('.musician-card p')[2].innerText = 'Gatunek: Pop/Rock';
         document.querySelectorAll('.musician-card p')[3].innerText = 'Instrument: Perkusja';
 
@@ -255,6 +262,8 @@
         document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[2].innerText = 'Gatunek:';
         document.querySelectorAll('.musician-card')[2].querySelectorAll('p')[3].innerText = 'Instrument: Gitara Basowa, Wiolonczela, Pianino';
     }
-</script>
+    </script>
 </body>
 </html>
+
+
