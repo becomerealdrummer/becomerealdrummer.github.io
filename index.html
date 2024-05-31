@@ -6,113 +6,118 @@
     <title>BecomeRealMusician</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap">
     <style>
-        body {
-            background-color: white;
-            font-family: 'Arial', cursive;
-            margin: 0;
-            padding: 0;
-            font-size: 18px;
-            color: black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+    body {
+        background-color: white;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .header-container img {
+        width: 150px;
+        height: auto;
+    }
+    h1 {
+        font-family: 'Arial', sans-serif;
+        color: black;
+        font-size: 36px;
+        margin: 0;
+    }
+    .content {
+        max-width: 800px;
+        padding: 20px;
+        text-align: justify;
+    }
+    .translate-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-family: 'Arial', sans-serif;
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .translate-btn:hover {
+        background-color: #f0f0f0;
+    }
+    .musicians-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .musician-card {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .musician-card img {
+        border-radius: 10px;
+        margin-right: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .musician-info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 20px; /* Add padding to separate text from the image */
+    }
+    @media (max-width: 600px) {
+        .header-container img {
+            width: 100px;
         }
-        .header-container {
-            display: flex;
+        h1 {
+            font-size: 28px;
+        }
+        .content {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .translate-btn {
+            font-size: 14px;
+            padding: 6px 10px;
+        }
+        .musician-card {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin-top: 20px;
         }
-        .header-container img {
-            width: 150px;
-            height: auto;
-        }
-        h1 {
-            font-family: 'Arial', sans-serif;
-            color: black;
-            font-size: 36px;
-            margin: 0;
-        }
-        .content {
-            max-width: 800px;
-            padding: 20px;
-            text-align: justify;
-        }
-        .translate-btn {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background-color: #fff;
-            padding: 8px 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            font-family: 'Arial', sans-serif;
-            color: black;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .translate-btn:hover {
-            background-color: #f0f0f0;
-        }
-        .musician-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 40px;
-            width: 100%;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .musician-card {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            width: 80%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-        .msuician-card img {
-            border-radius: 10px;
-            margin-right: 20px;
-            width: 200px;
-            height: 200px;
+        .musician-card img {
+            margin-right: 0;
+            margin-bottom: 10px;
         }
         .musician-info {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
+            padding-left: 0;
         }
-        @media (max-width: 600px) {
-            .header-container img {
-                width: 100px;
-            }
-            h1 {
-                font-size: 28px;
-            }
-            .content {
-                padding: 10px;
-                font-size: 16px;
-            }
-            .translate-btn {
-                font-size: 14px;
-                padding: 6px 10px;
-            }
-            .musician-card {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .musician-card img {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <div class="header-container">
