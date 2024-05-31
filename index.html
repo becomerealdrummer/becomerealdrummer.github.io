@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BecomeRealDrummer</title>
+    <title>BecomeRealMusician</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap">
     <style>
         body {
-            background-color: white; /* Changed to plain white background */
+            background-color: white;
             font-family: 'Arial', cursive;
             margin: 0;
             padding: 0;
             font-size: 18px;
-            color: black; /* Changed text color to black */
+            color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -25,12 +25,12 @@
             margin-top: 20px;
         }
         .header-container img {
-            width: 150px; /* Increased size */
+            width: 150px;
             height: auto;
         }
         h1 {
             font-family: 'Arial', sans-serif;
-            color: black; /* Changed text color to black */
+            color: black;
             font-size: 36px;
             margin: 0;
         }
@@ -48,7 +48,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             font-family: 'Arial', sans-serif;
-            color: black; /* Changed text color to black */
+            color: black;
             text-decoration: none;
             font-size: 16px;
         }
@@ -77,19 +77,19 @@
             justify-content: center;
         }
         .drummer-card img {
-            border-radius: 10px; /* Changed to square shape */
+            border-radius: 10px;
             margin-right: 20px;
-            width: 200px; /* Increased size */
-            height: 200px; /* Increased size */
+            width: 200px;
+            height: 200px;
         }
         .drummer-info {
             display: flex;
             flex-direction: column;
-            text-align: left; /* Align text to the left */
+            text-align: left;
         }
         @media (max-width: 600px) {
             .header-container img {
-                width: 100px; /* Adjusted for mobile */
+                width: 100px;
             }
             h1 {
                 font-size: 28px;
@@ -117,35 +117,56 @@
 <body>
     <div class="header-container">
         <img src="logo123.png" alt="Brand Logo">
-        <h1>BecomeRealDrummer</h1>
+        <h1>BecomeRealMusician</h1>
     </div>
     <div class="content">
         <p>Szanowni Państwo,</p>
-        <p>Jeśli rozważacie rozpoczęcie nauki gry na perkusji, mamy przyjemność zaproponować lekcje prowadzone przez nas. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują naszą szeroką wiedzę na temat tego instrumentu.</p>
-        <p>Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.</p>
+        <p>Jeśli rozważacie rozpoczęcie nauki gry na gitarze elektrycznej, perkusji, gitarze basowej, wiolonczeli oraz pianinie, mamy przyjemność zaproponować lekcje prowadzone przez nas. Materiał przerabiany na zajęciach będzie dobierany indywidualnie przez nauczyciela.</p>
+        <p>Koszt jednej godziny lekcji wynosi jedynie 50 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.</p>
         <p>Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.</p>
         <ul>
-            <li>Email: <a href="mailto:becomerealdrummer@gmail.com">becomerealdrummer@gmail.com</a></li>
+            <li>Email: <a href="mailto:becomerealmusician@gmail.com">becomerealmusician@gmail.com</a></li>
             <li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>
         </ul>
         <p>Z poważaniem,</p>
-        <p id="author-name"><a href="https://www.facebook.com/profile.php?id=61560034090351" target="_blank">BecomeRealDrummer</a></p>
+        <p id="author-name"><a href="https://www.facebook.com/profile.php?id=61560034090351" target="_blank">BecomeRealMusician</a></p>
     </div>
     <a href="#" class="translate-btn" id="translate-to-english">English</a>
     <a href="#" class="translate-btn" id="translate-to-polish" style="display: none;">Polish</a>
 
-    <div class="drummers-section" id="drummers-section">
-        <h2>Nasi Perkusiści</h2> <!-- Dodano nagłówek "Nasi Perkusiści" -->
-        <div class="drummer-card">
-            <img src="drummer1.jpg" alt="Drummer 1" style="width: 250px; height: 250px;">
-            <div class="drummer-info">
-                <h2><a href="https://www.facebook.com/emanuel.kecher.7" target="_blank">Emanuel Kecher</a></h2> <!-- Dodano link -->
+    <div class="musicians-section" id="musicians-section">
+        <h2>Nasi Muzycy</h2>
+        <div class="musician-card">
+            <img src="Emanuel_Kecher.jpg" alt="Musician 1">
+            <div class="musician-info">
+                <h2><a href="https://www.facebook.com/emanuel.kecher.7" target="_blank">Emanuel Kecher</a></h2>
                 <p>Wiek: 17</p>
                 <p>Doświadczenie: 3,5 roku</p>
                 <p>Gatunek: Pop/Rock</p>
+                <p>Instrument: Perkusja</p>
             </div>
         </div>
-        <!-- Możesz dodać więcej perkusistów w podobny sposób -->
+		<div class="musician-card">
+    <img src="karol_kozyra.jpg" alt="Karol Kozyra">
+    <div class="musician-info">
+        <h2><a href="https://www.facebook.com/karol.kozyra.12" target="_blank">Karol Kozyra</a></h2>
+        <p>Wiek: 18</p>
+        <p>Doświadczenie: 4 lata</p>
+        <p>Gatunek: </p>
+        <p>Instrument: Gitara elektryczna</p>
+    </div>
+</div>
+<div class="musician-card">
+    <img src="konrad_kraszewski.jpg" alt="Konrad Kraszewski">
+    <div class="musician-info">
+        <h2><a href="https://www.facebook.com/konrad.kraszewski.56" target="_blank">Konrad Kraszewski</a></h2>
+        <p>Wiek: 17</p>
+        <p>Doświadczenie: 13 lata</p>
+        <p>Gatunek: </p>
+        <p>Instrument: Gitara Basowa, Wiolonczela, Pianino</p>
+    </div>
+</div>
+
     </div>
 
     <script>
@@ -154,64 +175,65 @@
         const authorName = document.getElementById('author-name');
         const facebookLink = 'https://www.facebook.com/profile.php?id=61560034090351';
 
-translateToEnglishBtn.addEventListener('click', function(event) {
-event.preventDefault();
-translateToEnglish();
-});
+        translateToEnglishBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            translateToEnglish();
+        });
 
-translateToPolishBtn.addEventListener('click', function(event) {
-event.preventDefault();
-translateToPolish();
-});
+        translateToPolishBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            translateToPolish();
+        });
 
-function translateToEnglish() {
-translateToEnglishBtn.style.display = 'none';
-translateToPolishBtn.style.display = 'inline-block';
-document.documentElement.lang = 'en';
-document.querySelector('h1').innerText = 'BecomeRealDrummer';
-document.querySelectorAll('p')[0].innerText = 'Dear Sir or Madam,';
-document.querySelectorAll('p')[1].innerText = 'If you are considering starting drum lessons, we are pleased to offer lessons conducted by us. The classes will follow the curriculum of the Leicester drum school and will utilize our extensive knowledge of this instrument.';
-document.querySelectorAll('p')[2].innerText = 'The cost of one hour of lessons is only 40 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
-document.querySelectorAll('p')[3].innerText = 'We encourage you to contact us via email or phone number for detailed information.';
-document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealdrummer@gmail.com">becomerealdrummer@gmail.com</a></li><li>Phone: <a href="tel:+48511531874">+48 511 531 874</a></li>';
-document.querySelectorAll('p')[4].innerText = 'Yours sincerely,';
-authorName.innerHTML = '<a href="' + facebookLink + '" target="_blank">BecomeRealDrummer</a>';
+        function translateToEnglish() {
+            translateToEnglishBtn.style.display = 'none';
+            translateToPolishBtn.style.display = 'inline-block';
+            document.documentElement.lang = 'en';
+            document.querySelector('h1').innerText = 'BecomeRealMusician';
+            document.querySelectorAll('p')[0].innerText = 'Dear Sir or Madam,';
+            document.querySelectorAll('p')[1].innerText = 'If you are considering starting lessons on electric guitar, drums, bass guitar, cello, or piano, we are pleased to offer lessons conducted by us. The material covered in the classes will be individually tailored by the teacher.';
+            document.querySelectorAll('p')[2].innerText = 'The cost of one hour of lessons is only 50 PLN. Lessons are conducted in Cieszyn, Silesian Voivodeship, Poland.';
+            document.querySelectorAll('p')[3].innerText = 'We encourage you to contact us via email or phone number for detailed information.';
+            document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealdrummer@gmail.com">becomerealdrummer@gmail.com</a></li><li>Phone: <a href="tel:+48511531874">+48 511 531 874</a></li>';
+            document.querySelectorAll('p')[4].innerText = 'Yours sincerely,';
+            authorName.innerHTML = '<a href="' + facebookLink + '" target="_blank">BecomeRealMusician</a>';
+            
+            // Translate drummers section
+            translateDrummersToEnglish();
+        }
 
-// Translate drummers section
-translateDrummersToEnglish();
-}
+        function translateToPolish() {
+            translateToEnglishBtn.style.display = 'inline-block';
+            translateToPolishBtn.style.display = 'none';
+            document.documentElement.lang = 'pl';
+            document.querySelector('h1').innerText = 'BecomeRealMuzyk';
+            document.querySelectorAll('p')[0].innerText = 'Szanowni Państwo,';
+            document.querySelectorAll('p')[1].innerText = 'Jeśli rozważacie rozpoczęcie nauki gry na gitarze elektrycznej, perkusji, gitarze basowej, wiolonczeli oraz pianinie, mamy przyjemność zaproponować lekcje prowadzone przez nas. Materiał przerabiany na zajęciach będzie dobierany indywidualnie przez nauczyciela.';
+            document.querySelectorAll('p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 50 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
+            document.querySelectorAll('p')[3].innerText = 'Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.';
+            document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealdrummer@gmail.com">becomerealdrummer@gmail.com</a></li><li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>';
+            document.querySelectorAll('p')[4].innerText = 'Z poważaniem,';
+            authorName.innerHTML = '<a href="' + facebookLink + '" target="_blank">BecomeRealMuzyk</a>';
+            
+            // Translate drummers section
+            translateDrummersToPolish();
+        }
 
-function translateToPolish() {
-translateToEnglishBtn.style.display = 'inline-block';
-translateToPolishBtn.style.display = 'none';
-document.documentElement.lang = 'pl';
-document.querySelector('h1').innerText = 'BecomeRealDrummer';
-document.querySelectorAll('p')[0].innerText = 'Szanowni Państwo,';
-document.querySelectorAll('p')[1].innerText = 'Jeśli rozważacie rozpoczęcie nauki gry na perkusji, mamy przyjemność zaproponować lekcje prowadzone przez nas. Zajęcia będą odbywały się zgodnie z podręcznikiem szkoły perkusyjnej z Leicesteru oraz wykorzystują naszą szeroką wiedzę na temat tego instrumentu.';
-document.querySelectorAll('p')[2].innerText = 'Koszt jednej godziny lekcji wynosi jedynie 40 złotych. Lekcje prowadzone są w Cieszynie na Śląsku w Polsce.';
-document.querySelectorAll('p')[3].innerText = 'Zachęcamy do kontaktu poprzez e-mail lub numer telefonu w celu uzyskania szczegółowych informacji.';
-document.querySelector('ul').innerHTML = '<li>Email: <a href="mailto:becomerealdrummer@gmail.com">becomerealdrummer@gmail.com</a></li><li>Telefon: <a href="tel:+48511531874">+48 511 531 874</a></li>';
-document.querySelectorAll('p')[4].innerText = 'Z poważaniem,';
-authorName.innerHTML = '<a href="' + facebookLink + '" target="_blank">BecomeRealDrummer</a>';
+        function translateDrummersToEnglish() {
+            document.querySelector('.drummers-section h2').innerText = 'Our Musicians';
+            document.querySelectorAll('.drummer-card p')[0].innerText = 'Age: 17';
+            document.querySelectorAll('.drummer-card p')[1].innerText = 'Experience: 3.5 years';
+            document.querySelectorAll('.drummer-card p')[2].innerText = 'Genre: Pop/Rock';
+            document.querySelectorAll('.drummer-card p')[3].innerText = 'Instrument: Drums';
+        }
 
-// Translate drummers section
-translateDrummersToPolish();
-}
-
-function translateDrummersToEnglish() {
-document.querySelector('.drummers-section h2').innerText = 'Our Drummers';
-document.querySelectorAll('.drummer-card p')[0].innerText = 'Age: 17';
-document.querySelectorAll('.drummer-card p')[1].innerText = 'Experience: 3.5 years';
-document.querySelectorAll('.drummer-card p')[2].innerText = 'Genre: Pop/Rock';
-}
-
-function translateDrummersToPolish() {
-document.querySelector('.drummers-section h2').innerText = 'Nasi Perkusiści';
-document.querySelectorAll('.drummer-card p')[0].innerText = 'Wiek: 17';
-document.querySelectorAll('.drummer-card p')[1].innerText = 'Doświadczenie: 3,5 roku';
-document.querySelectorAll('.drummer-card p')[2].innerText = 'Gatunek: Pop/Rock';
-}
-</script>
-
+        function translateDrummersToPolish() {
+            document.querySelector('.drummers-section h2').innerText = 'Nasi Muzycy';
+            document.querySelectorAll('.drummer-card p')[0].innerText = 'Wiek: 17';
+            document.querySelectorAll('.drummer-card p')[1].innerText = 'Doświadczenie: 3,5 roku';
+            document.querySelectorAll('.drummer-card p')[2].innerText = 'Gatunek: Pop/Rock';
+            document.querySelectorAll('.drummer-card p')[3].innerText = 'Instrument: Perkusja';
+        }
+    </script>
 </body>
 </html>
